@@ -1,4 +1,4 @@
-# Experimental Meeting app for SSN Institutions using Frappe 
+# Experimental Meeting app  using Frappe 
 
 ### How to use:
 
