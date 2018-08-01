@@ -5,7 +5,8 @@ frappe.listview_settings['Meeting'] = {
  			"Invite Sent": "orange",
  			"In Progress":"red",
  			"Completed": "green",
- 			"Cancelled":"darkgrey"
+ 			"Cancelled":"darkgrey",
+                        "Mail Sent": "black"
  		}[doc.status], "status,=," + doc.status];
  	}
  };

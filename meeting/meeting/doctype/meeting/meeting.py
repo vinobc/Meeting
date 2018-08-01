@@ -23,24 +23,24 @@ class Meeting(Document):
 
 	    found_attendee.append(attendee.attendee)
 
-	for chair in self.meeting_chair:
-            if not chair.chair_name:
-                chair.chair_name = get_chair_name(chair.user)
+	#for chair in self.meeting_chair:
+           # if not chair.chair_name:
+               # chair.chair_name = get_chair_name(chair.user)
 
-	    if chair.user in found_chair:
-                frappe.throw(_("Duplicate chair {0} found").format(chair.user))
+	    #if chair.user in found_chair:
+             #   frappe.throw(_("Duplicate chair {0} found").format(chair.user))
 
-            found_chair.append(chair.user)
+            #found_chair.append(chair.user)
 
 	
-	for coordinator in self.meeting_coordinator:
-            if not coordinator.coordinator_name:
-                coordinator.coordinator_name = get_coordinator_name(coordinator.user)
+	#for coordinator in self.meeting_coordinator:
+         #   if not coordinator.coordinator_name:
+          #      coordinator.coordinator_name = get_coordinator_name(coordinator.user)
 
-	    if coordinator.user in found_coordinator:
-                frappe.throw(_("Duplicate coordinator {0} found").format(coordinator.user))
+	   # if coordinator.user in found_coordinator:
+            #    frappe.throw(_("Duplicate coordinator {0} found").format(coordinator.user))
 
-            found_coordinator.append(coordinator.user)
+            #found_coordinator.append(coordinator.user)
 
 
 	for owner in self.meeting_minutes:
@@ -58,15 +58,15 @@ def get_attendee_name(attendee):
     user = frappe.get_doc("User", attendee)
     return " ".join(filter(None,[user.first_name,user.middle_name,user.last_name]))
 
-@frappe.whitelist()
-def get_chair_name(chair):
-    user = frappe.get_doc("User", chair)
-    return " ".join(filter(None,[user.first_name,user.middle_name,user.last_name]))
+#@frappe.whitelist()
+#def get_chair_name(chair):
+ #   user = frappe.get_doc("User", chair)
+  #  return " ".join(filter(None,[user.first_name,user.middle_name,user.last_name]))
 
-@frappe.whitelist()
-def get_coordinator_name(coordinator):
-    user = frappe.get_doc("User", coordinator)
-    return " ".join(filter(None, [user.first_name,user.middle_name,user.last_name]))
+#@frappe.whitelist()
+#def get_coordinator_name(coordinator):
+ #   user = frappe.get_doc("User", coordinator)
+  #  return " ".join(filter(None, [user.first_name,user.middle_name,user.last_name]))
 
 @frappe.whitelist()
 def get_owner_name(owner):
