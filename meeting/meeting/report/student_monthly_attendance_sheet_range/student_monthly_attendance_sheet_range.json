@@ -1,0 +1,21 @@
+{
+ "add_total_row": 0, 
+ "apply_user_permissions": 1, 
+ "creation": "2018-08-10 12:50:23.004448", 
+ "disabled": 0, 
+ "docstatus": 0, 
+ "doctype": "Report", 
+ "idx": 0, 
+ "is_standard": "Yes", 
+ "letter_head": "SSN Institutions", 
+ "modified": "2018-08-24 18:23:49.925800", 
+ "modified_by": "Administrator", 
+ "module": "Meeting", 
+ "name": "Student Monthly Attendance Sheet-range", 
+ "owner": "Administrator", 
+ "query": "SELECT\n  `tabStudent Attendance`.register_number as \"Register Number:Readonly:120\",  \n  `tabStudent Attendance`.student_name as \"Student Name:Readonly:200\",\n   COUNT(`tabStudent Attendance`.status) as \"CS6551 (Days Present):select:150\"\nFROM\n  `tabStudent Attendance`\nWHERE\n  (`tabStudent Attendance`.date BETWEEN '2018-07-28' AND '2018-08-25') and\n  `tabStudent Attendance`.student_group = 'CS6551/B.Tech in Information Technology/A/2018-19 (Sem5)' and\n  `tabStudent Attendance`.status ='Present'\n   group by `tabStudent Attendance`.student_name\n   order by `tabStudent Attendance`.register_number asc \n  \n  ", 
+ "ref_doctype": "Student Attendance", 
+ "report_name": "Student Monthly Attendance Sheet-range", 
+ "report_type": "Query Report", 
+ "roles": []
+}
