@@ -5,7 +5,7 @@ import re, ast
 with open('requirements.txt') as f:
 	install_requires = f.read().strip().split('\n')
 
-# get version from __version__ variable in meeting/__init__.py
+# get version from __version__ variable in it_dept_library/__init__.py
 _version_re = re.compile(r'__version__\s+=\s+(.*)')
 
 with open('meeting/__init__.py', 'rb') as f:
@@ -15,7 +15,7 @@ with open('meeting/__init__.py', 'rb') as f:
 setup(
 	name='meeting',
 	version=version,
-	description='Meeting management for SSN Institutions',
+	description='meeting',
 	author='R Vinob Chander',
 	author_email='vinobchanderr@ssn.edu.in',
 	packages=find_packages(),
