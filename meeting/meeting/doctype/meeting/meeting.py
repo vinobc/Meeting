@@ -15,6 +15,7 @@ class Meeting(Document):
         found_coordinator = []
         found_owner = []
         for attendee in self.meeting_attendees:
+	    
 	    if not attendee.full_name:
 	        attendee.full_name = get_attendee_name(attendee.attendee)
 
