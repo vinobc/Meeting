@@ -10,7 +10,6 @@ from frappe.model.document import Document
 class Meeting(Document):
     def validate(self):
         """Set missing names"""
-	found_attendee = []
 	found_chair = []
 	found_coordinator = []
 	found_owner = []
