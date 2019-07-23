@@ -42,7 +42,7 @@ class Meeting(Document):
             #found_coordinator.append(coordinator.user)
 
 
-	for owner in self.meeting_minutes:
+        for owner in self.meeting_minutes:
             if not owner.owner_name:
                 owner.owner_name = get_owner_name(owner.owner_assigned_to)
 
