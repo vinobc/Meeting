@@ -15,12 +15,11 @@ class Meeting(Document):
         found_coordinator = []
         found_owner = []
         for attendee in self.meeting_attendees:
-			if not attendee.full_name:
-	        	attendee.full_name = get_attendee_name(attendee.attendee)
-
+	    if not attendee.full_name:
+	        attendee.full_name = get_attendee_name(attendee.attendee)
 		    
-	    	if attendee.attendee in found_attendee:
-	        	frappe.throw(_("Duplicate attendee {0} found").format(attendee.attendee))
+	    if attendee.attendee in found_attendee:
+	        frappe.throw(_("Duplicate attendee {0} found").format(attendee.attendee))
             	found_attendee.append(attendee.attendee)
 
 	#for chair in self.meeting_chair:
