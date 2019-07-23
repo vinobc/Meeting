@@ -49,11 +49,14 @@ class Meeting(Document):
         for owner in self.meeting_minutes:
             if not owner.owner_name:
                 owner.owner_name = get_owner_name(owner.owner_assigned_to)
-
-	    if owner.owner_assigned_to in found_owner:
+            if owner.owner_assigned_to in found_owner:
                 frappe.throw(_("Duplicate task owner {0} found").format(owner.owner_assigned_to))
+                found_owner.append(owner.owner_assigned_to)
 
-            found_owner.append(owner.owner_assigned_to)
+	    
+                
+
+            
 
 
 @frappe.whitelist()
