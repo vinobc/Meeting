@@ -1,0 +1,52 @@
+{
+ "creation": "2019-08-24 13:54:40.066885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "designation",
+  "roles_and_responsibilities",
+  "duration_months"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Company Name"
+  },
+  {
+   "columns": 3,
+   "fieldname": "designation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Designation"
+  },
+  {
+   "columns": 3,
+   "fieldname": "roles_and_responsibilities",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Roles and responsibilities"
+  },
+  {
+   "fieldname": "duration_months",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Duration (months)"
+  }
+ ],
+ "istable": 1,
+ "modified": "2019-08-24 14:05:37.997176",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "Work experience",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

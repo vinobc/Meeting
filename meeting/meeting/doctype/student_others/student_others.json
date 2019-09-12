@@ -1,0 +1,194 @@
+{
+ "autoname": "St-others-.#",
+ "creation": "2019-08-24 13:25:38.617092",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "student",
+  "photo",
+  "signature",
+  "handwriting",
+  "section_break_5",
+  "x_school_name",
+  "x_board",
+  "x_percentage",
+  "x_year_of_passing",
+  "section_break_10",
+  "ug_projects_internships_company_year_duration",
+  "entrance_test_details_section",
+  "entrance_test_name",
+  "registered_number_for",
+  "test_date",
+  "admission_test_score",
+  "admission_test_percentile",
+  "work_experience_section",
+  "work_experience",
+  "total_work_experience_in_months",
+  "section_break_23",
+  "extracurricular_achievements",
+  "sports_achievements",
+  "awards_scholarships_won",
+  "industry_sponsorships_sabbatical_support",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "label": "Student",
+   "options": "Student"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "handwriting",
+   "fieldtype": "Attach Image",
+   "label": "Handwriting"
+  },
+  {
+   "fieldname": "x_school_name",
+   "fieldtype": "Data",
+   "label": "X School Name"
+  },
+  {
+   "fieldname": "x_board",
+   "fieldtype": "Data",
+   "label": "X Board"
+  },
+  {
+   "fieldname": "x_percentage",
+   "fieldtype": "Percent",
+   "label": "X percentage"
+  },
+  {
+   "fieldname": "x_year_of_passing",
+   "fieldtype": "Date",
+   "label": "X year of passing"
+  },
+  {
+   "fieldname": "ug_projects_internships_company_year_duration",
+   "fieldtype": "Text Editor",
+   "label": "UG Projects/Internships: (company, year, duration, etc)"
+  },
+  {
+   "fieldname": "entrance_test_name",
+   "fieldtype": "Data",
+   "label": "Entrance test name"
+  },
+  {
+   "fieldname": "registered_number_for",
+   "fieldtype": "Data",
+   "label": "Registered number for"
+  },
+  {
+   "fieldname": "test_date",
+   "fieldtype": "Date",
+   "label": "Test Date"
+  },
+  {
+   "fieldname": "admission_test_score",
+   "fieldtype": "Data",
+   "label": "Admission test score: -----/------"
+  },
+  {
+   "fieldname": "admission_test_percentile",
+   "fieldtype": "Percent",
+   "label": "Admission test percentile"
+  },
+  {
+   "fieldname": "extracurricular_achievements",
+   "fieldtype": "Text Editor",
+   "label": "Extracurricular achievements"
+  },
+  {
+   "fieldname": "sports_achievements",
+   "fieldtype": "Text Editor",
+   "label": "Sports achievements"
+  },
+  {
+   "fieldname": "awards_scholarships_won",
+   "fieldtype": "Text Editor",
+   "label": "Awards/Scholarships won"
+  },
+  {
+   "default": "0",
+   "fieldname": "industry_sponsorships_sabbatical_support",
+   "fieldtype": "Check",
+   "label": "Industry sponsorships / sabbatical support"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "entrance_test_details_section",
+   "fieldtype": "Section Break",
+   "label": "Entrance test details"
+  },
+  {
+   "fieldname": "work_experience_section",
+   "fieldtype": "Section Break",
+   "label": "Work experience"
+  },
+  {
+   "fieldname": "section_break_23",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_experience",
+   "fieldtype": "Table",
+   "options": "Work experience"
+  },
+  {
+   "fieldname": "total_work_experience_in_months",
+   "fieldtype": "Data",
+   "label": "Total work experience (in months)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "student others",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  }
+ ],
+ "modified": "2019-08-26 17:59:27.899390",
+ "modified_by": "Administrator",
+ "module": "Meeting",
+ "name": "student others",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "student",
+ "track_changes": 1
+}
