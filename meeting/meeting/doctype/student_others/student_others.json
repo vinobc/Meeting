@@ -61,12 +61,12 @@
   },
   {
    "fieldname": "x_percentage",
-   "fieldtype": "Percent",
+   "fieldtype": "Data",
    "label": "X percentage"
   },
   {
    "fieldname": "x_year_of_passing",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
    "label": "X year of passing"
   },
   {
@@ -167,7 +167,7 @@
    "label": "Photo"
   }
  ],
- "modified": "2019-08-26 17:59:27.899390",
+ "modified": "2019-09-17 05:03:20.273334",
  "modified_by": "Administrator",
  "module": "Meeting",
  "name": "student others",
